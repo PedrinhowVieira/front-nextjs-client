@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src --max-warnings=0"
+    "lint": "eslint src --max-warnings=0",
+    "postinstall": "husky install"
   },
   "husky": {
     "hooks": {
@@ -14,7 +15,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*": ["yarn lint --fix"]
+    "src/**/*": [
+      "yarn lint --fix"
+    ]
   },
   "dependencies": {
     "next": "10.0.7",
