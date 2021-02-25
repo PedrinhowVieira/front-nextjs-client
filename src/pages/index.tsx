@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 
-const foo = 'bla'
-
 export default function Home({ title = 'React' }) {
   return (
     <div className={styles.container}>
